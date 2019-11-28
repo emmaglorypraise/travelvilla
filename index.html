@@ -126,7 +126,31 @@
         transition: 500,
         interval: 6000 });
      });
-    
+
+    //  autocomplete
+    $(document).ready(function(){
+    $('.autocomplete').autocomplete({
+      data: {
+        "Apple": null,
+        "Microsoft": null,
+        "Google": 'https://placehold.it/250x250',
+        "Aruba": null,
+        "Nigeria": null,
+        "Cancum": null,
+        "Florida": null,
+        "India": null,
+        "New York": null,
+        "California": null,
+        "Egypt": null,
+        "Europe": null
+      },
+    });
+  });
+  
+  
+  
+   
+   
     </script>
   </body>
 </html>
