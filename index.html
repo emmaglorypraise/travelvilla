@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/71d7c95711.js" crossorigin="anonymous"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Travelville</title>
+  </head>
+
+  <body id="home" class="scrollspy">
+  <!-- Navbar -->
+    <div class="navbar-fixed">
+      <nav class="teal">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Travelville</a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                  <a href="#search">Search</a>
+              </li>
+              <li>
+                  <a href="#popular">Popular Places</a>
+              </li>
+              <li>
+                  <a href="#gallery">Gallery</a>
+              </li>
+              <li>
+                  <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <ul class="sidenav" id="mobile-nav">
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+            <a href="#search">Search</a>
+        </li>
+        <li>
+            <a href="#popular">Popular Places</a>
+        </li>
+        <li>
+            <a href="#gallery">Gallery</a>
+        </li>
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+      </ul>
+
+  <!-- Section: Slider -->
+  <section class="slider">
+      <ul class="slides">
+          <li>
+            <img src="images/resort1.jpg"> <!-- random image -->
+            <div class="caption center-align">
+              <h2>Take Your Dream Vacation</h2>
+              <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi dignissimos modi velit .</h5>
+            </div>
+          </li>
+          <li>
+            <img src="images/resort2.jpg"> <!-- random image -->
+            <div class="caption left-align">
+              <h2>We  Work with All Budget</h2>
+              <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur molestiae  ?</h5>
+            </div>
+          </li>
+          <li>
+            <img src="images/resort3.jpg"> <!-- random image -->
+            <div class="caption right-align">
+              <h2>Group & Individual Getaways</h2>
+              <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. </h5>
+            </div>
+          </li>
+        </ul>
+  </section>
+
+  <!-- Section: Search -->
+  <section id="search" class="section section-search teal darken-1 white-text center scrollspy">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h3>Search Destinations</h3>
+          <div class="input-field">
+            <input type="text" class="white grey-text autocomplete" id="autocomplete-input" placeholder="Aruba, Cancum, etc...">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+     <!--Import jQuery before materialize.js-->
+     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>  
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+
+    // Sidenav
+    //  Using auto init to initialize all javascript
+     M.AutoInit();
+
+    // slider
+    $(document).ready(function () {
+        $('.slider').slider({full_width: true, 
+        indicators: false,
+        height: 500,
+        transition: 500,
+        interval: 6000 });
+     });
+    
+    </script>
+  </body>
+</html>
